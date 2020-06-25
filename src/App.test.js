@@ -15,6 +15,12 @@ describe("Paragraph test", () => {
   });
 });
 
+describe("Classname test", () => {
+  test("checks for classname App", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find("div").hasClass("App"));
+  });
+});
 
 // describe("Paragraph test", () => {
 //   test("render the paragraph on the page", () => {
